@@ -44,7 +44,7 @@ let model;
 let targetRotation = { x: 0, y: 0 };
 let loader = new THREE.GLTFLoader();
 loader.load(
-    'BlenderLogov6.glb', // This file should be in the SAME folder as index.html
+    'https://raw.githubusercontent.com/RichardSavageVoice/my-3d-model-site/main/BlenderLogov6.glb', // This file should be in the SAME folder as index.html
     function (gltf) {
         model = gltf.scene;
         model.traverse(function (child) {
@@ -104,4 +104,5 @@ animate();
 
 </body>
 </html>
+
 
